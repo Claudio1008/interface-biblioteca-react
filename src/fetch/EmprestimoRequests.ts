@@ -14,7 +14,7 @@ class EmprestimoRequests {
 
     constructor() {
         this.serverURL = SERVER_CFG.SERVER_URL;
-        this.routeListaEmprestimo = '/lista/emprestimo';
+        this.routeListaEmprestimo = '/lista/emprestimos';
         this.routeCadastroEmprestimo = '/novo/emprestimo';
         this.routeAtualizarEmprestimo = '/atualizar/emprestimo';
         this.routeRemoveEmprestimo = '/remove/emprestimo';

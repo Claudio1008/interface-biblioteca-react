@@ -25,8 +25,8 @@ function TabelaEmprestimo() {
         <DataTable value={emprestimos} paginator rows={5} rowsPerPageOptions={[5, 10, 25, 50]} tableStyle={{ minWidth: '50rem' }}
                 paginatorTemplate="RowsPerPageDropdown FirstPageLink PrevPageLink CurrentPageReport NextPageLink LastPageLink"
                 currentPageReportTemplate="{first} to {last} of {totalRecords}" paginatorLeft={paginatorLeft} paginatorRight={paginatorRight}>
-                <Column field="nomeAluno" header="nome do aluno" style={{ width: '25%' }}></Column>
-                <Column field="tituloLivro" header="titulo do livro" style={{ width: '25%' }}></Column>
+                <Column field="aluno.nome" header="nome do aluno" style={{ width: '25%' }}></Column>
+                <Column field="livro.titulo" header="titulo do livro" style={{ width: '25%' }}></Column>
                 <Column field="dataEmprestimo" header="data do emprestimo" style={{ width: '25%' }}></Column>
                 <Column field="dataDevolucao" header="data de devolução" style={{ width: '25%' }}></Column>
                 <Column field="statusEmprestimos" header="status do emprestimo" style={{ width: '25%' }}></Column>
